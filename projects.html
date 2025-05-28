@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anushka Joshi | ESG Consulting - Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+<style>
+  /* Same styles as index.html with minor changes */
+  :root {
+    --red: #d33f49;
+    --orange: #f07818;
+    --yellow: #f9d71c;
+    --green: #4c9a2a;
+    --blue: #1f4e79;
+    --dark-brown: #3a2f23;
+    --cream: #fff8e7;
+    --tribal-opacity: 0.07;
+  }
+  body {
+    margin: 0;
+    background: var(--cream);
+    font-family: 'Marcellus', serif;
+    color: var(--dark-brown);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-top: 4.5rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  nav {
+    background: var(--blue);
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0; width: 100%; z-index: 100;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+  }
+  nav a {
+    color: var(--cream);
+    margin: 0 1.8rem;
+    text-decoration: none;
+    font-family: 'Nanum Pen Script', cursive;
+    transition: color 0.3s ease;
+  }
+  nav a:hover, nav a[aria-current="page"] {
+    color: var(--orange);
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+  }
+  h2 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.2rem;
+    color: var(--blue);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .project {
+    border: 4px double var(--red);
+    border-radius: 20px;
+    background: #fff3cc;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px var(--dark-brown);
+    animation: fadeInUp 1.3s ease forwards;
+  }
+  .project p {
+    font-weight: 500;
+  }
+  .download-btn {
+    margin-top: 1rem;
+    background: var(--orange);
+    color: var(--cream);
+    border: none;
+    padding: 0.8rem 1.4rem;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .download-btn:hover {
+    background: var(--red);
+  }
+  /* Tribal subtle background circles top-right */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; right: 0;
+    width: 180px; height: 180px;
+    opacity: var(--tribal-opacity);
+    background: url('assets/tribal_pattern.svg') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 0;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+    border-top: 2px solid var(--red);
+    font-family: monospace;
+    color: var(--dark-brown);
+  }
+  @keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(40px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  @media (max-width: 600px) {
+    nav {font-size: 0.75rem;}
+    .container {margin: 5rem 1rem 3rem; padding: 1rem;}
+    h2 {font-size: 1.8rem;}
+  }
+</style>
+</head>
+<body>
+<nav aria-label="Primary navigation">
+  <a href="index.html">Home</a>
+  <a href="projects.html" aria-current="page">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>My Projects & Scripts</h2>
+
+  <div class="project" role="region" aria-live="polite" aria-label="Project ESG Strategy Outline">
+    <p>A comprehensive ESG strategy framework outlining key priorities, KPIs, and milestones designed for corporate clients aiming for sustainable growth.</p>
+    <button class="download-btn" onclick="alert('Download feature coming soon!')">Download Strategy Outline (PDF)</button>
+  </div>
+
+  <div class="project" role="region" aria-live="polite" aria-label="Project Emission Model Python Script">
+    <p>Python-based emission model tool to calculate and report emissions accurately, customizable for any sector.</p>
+    <button class="download-btn" onclick="alert('Download feature coming soon!')">Download Python Script (.py)</button>
+  </div>
+
+  <div class="project" role="region" aria-live="polite" aria-label="Project Sample Data File">
+    <p>Sample CSV data file demonstrating emissions data used in analysis and reporting.</p>
+    <button class="download-btn" onclick="alert('Download feature coming soon!')">Download Sample CSV</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Anushka Joshi • ESG Consulting</p>
+</footer>
+</body>
+</html>

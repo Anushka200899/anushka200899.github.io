@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anushka Joshi | ESG Consulting - Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+<style>
+  /* Same styling basics */
+  :root {
+    --red: #d33f49;
+    --orange: #f07818;
+    --yellow: #f9d71c;
+    --green: #4c9a2a;
+    --blue: #1f4e79;
+    --dark-brown: #3a2f23;
+    --cream: #fff8e7;
+    --tribal-opacity: 0.07;
+  }
+  body {
+    margin: 0;
+    background: var(--cream);
+    font-family: 'Marcellus', serif;
+    color: var(--dark-brown);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-top: 4.5rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  nav {
+    background: var(--blue);
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0; width: 100%; z-index: 100;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+  }
+  nav a {
+    color: var(--cream);
+    margin: 0 1.8rem;
+    text-decoration: none;
+    font-family: 'Nanum Pen Script', cursive;
+    transition: color 0.3s ease;
+  }
+  nav a:hover, nav a[aria-current="page"] {
+    color: var(--orange);
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+  }
+  h2 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.2rem;
+    color: var(--blue);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact-buttons a {
+    background: var(--orange);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    box-shadow: 3px 3px var(--dark-brown);
+    transition: background 0.3s ease;
+    min-width: 180px;
+    text-align: center;
+  }
+  .contact-buttons a:hover {
+    background: var(--red);
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 200px; height: 200px;
+    opacity: var(--tribal-opacity);
+    background: url('assets/tribal_pattern.svg') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 0;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+    border-top: 2px solid var(--red);
+    font-family: monospace;
+    color: var(--dark-brown);
+  }
+  @media (max-width: 600px) {
+    nav {font-size: 0.75rem;}
+    .container {margin: 5rem 1rem 3rem; padding: 1rem;}
+    h2 {font-size: 1.8rem;}
+  }
+</style>
+</head>
+<body>
+<nav aria-label="Primary navigation">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>Contact Anushka Joshi</h2>
+  <p style="text-align:center; max-width: 700px; margin: auto; font-weight: 600;">
+    Interested in working together? Let’s connect! Use the buttons below to send an email, message on WhatsApp, or visit my LinkedIn profile.
+  </p>
+  <div class="contact-buttons" role="group" aria-label="Contact methods">
+    <a href="mailto:anushka.joshi99@outlook.com" target="_blank" rel="noopener noreferrer" aria-label="Send email to Anushka Joshi">Email Me</a>
+    <a href="https://www.linkedin.com/in/anushka-joshi-851800313" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile of Anushka Joshi">LinkedIn</a>
+    <a href="https://wa.me/918989616664" target="_blank" rel="noopener noreferrer" aria-label="Chat with Anushka Joshi on WhatsApp">WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Anushka Joshi • ESG Consulting</p>
+</footer>
+</body>
+</html>
