@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Costs: Workplace Harassment's Impact on ESG & Value in India Inc.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 384px;
+            }
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            line-height: 1;
+            color: #90A4AE;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F4F8] text-[#1A202C]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#005A9C] mb-4">The Hidden Costs of Silence</h1>
+            <p class="text-lg md:text-xl text-[#334E68] max-w-4xl mx-auto">Ignoring workplace harassment in Indian public companies creates a costly ripple effect, eroding ESG performance, damaging financial stability, and deterring investors. This is a look at the data behind the real-world impact.</p>
+        </header>
+
+        <main>
+            <section id="prevalence" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#007BFF]">The State of Play: A Rising Tide of Complaints</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-6xl font-bold text-[#007BFF]">29% ▲</p>
+                        <p class="mt-2 text-lg text-[#334E68]">Increase in POSH Complaints Reported in FY24</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-6xl font-bold text-[#D32F2F]">67% ▲</p>
+                        <p class="mt-2 text-lg text-[#334E68]">Alarming Increase in Pending Unresolved Cases</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-6xl font-bold text-[#D32F2F]">59%</p>
+                        <p class="mt-2 text-lg text-[#334E68]">of Surveyed Companies Lack a Mandated Internal Complaints Committee (ICC)</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-center">Reported vs. Pending Cases (FY23-FY24)</h3>
+                        <p class="text-center text-[#334E68] mb-4">While reporting is on the rise—a sign of growing awareness—the inability to resolve complaints in a timely manner is creating a significant trust deficit and systemic risk.</p>
+                        <div class="chart-container mt-auto">
+                            <canvas id="reportedVsPendingChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-center">Sectoral Hotspots: Where Are Cases Concentrated?</h3>
+                        <p class="text-center text-[#334E68] mb-4">The IT and Banking sectors account for a disproportionate share of reported incidents, driven partly by a higher share of women employees and specific workplace dynamics.</p>
+                        <div class="chart-container mt-auto">
+                            <canvas id="sectoralCasesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="domino-effect" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#007BFF]">The Domino Effect: From Culture to Costs</h2>
+                <p class="text-center text-lg text-[#334E68] max-w-3xl mx-auto mb-12">A single unaddressed incident of harassment triggers a devastating chain reaction that systematically dismantles corporate value from the inside out.</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-center mb-8">
+                        <div class="inline-block bg-red-100 text-red-800 font-bold py-3 px-6 rounded-lg">Ignored Workplace Harassment</div>
+                    </div>
+                    <div class="flex justify-center mb-4"><span class="flow-arrow">⬇</span></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                        <div>
+                            <div class="bg-blue-100 text-blue-800 font-semibold py-3 px-6 rounded-lg">Eroded Social (S) Pillar</div>
+                             <div class="flex justify-center mt-4"><span class="flow-arrow">⬇</span></div>
+                             <div class="mt-4 space-y-3">
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">Productivity Loss & "Quiet Quitting"</div>
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">High Employee Turnover</div>
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">Brand & Reputation Damage</div>
+                             </div>
+                        </div>
+                        <div>
+                             <div class="bg-blue-100 text-blue-800 font-semibold py-3 px-6 rounded-lg">Weakened Governance (G) Pillar</div>
+                             <div class="flex justify-center mt-4"><span class="flow-arrow">⬇</span></div>
+                             <div class="mt-4 space-y-3">
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">Signals Poor Board Oversight</div>
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">Leads to Regulatory Fines (SEBI, POSH)</div>
+                                <div class="p-3 bg-gray-100 rounded-md shadow-sm">Exposes Company to Legal Liabilities</div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-8"><span class="flow-arrow">⬇</span></div>
+                    <div class="text-center">
+                         <div class="inline-block bg-red-800 text-white font-bold py-4 px-8 rounded-lg text-xl">Reduced Shareholder Value & Investor Distrust</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="financial-fallout" class="mb-16">
+                 <h2 class="text-3xl font-bold text-center mb-8 text-[#007BFF]">The Financial Fallout: Quantifying the Damage</h2>
+                 <p class="text-center text-lg text-[#334E68] max-w-3xl mx-auto mb-12">The consequences are not just abstract risks; they translate into measurable financial losses that directly impact the bottom line and market valuation.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-bold text-[#D32F2F]">-17%</div>
+                        <h3 class="mt-2 text-lg font-semibold">Annualized Alpha</h3>
+                        <p class="text-[#334E68] mt-1">Potential stock underperformance for firms with high rates of sexual harassment.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-bold text-[#D32F2F]">40%</div>
+                        <h3 class="mt-2 text-lg font-semibold">Productivity Decline</h3>
+                        <p class="text-[#334E68] mt-1">The potential drop in productivity caused by workplace bullying and a toxic environment.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-bold text-[#D32F2F]">₹50,000+</div>
+                        <h3 class="mt-2 text-lg font-semibold">POSH Act Fines</h3>
+                        <p class="text-[#334E68] mt-1">Initial penalty for non-compliance, with repeat offenses leading to license cancellation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-bold text-[#D32F2F]">$4,700</div>
+                        <h3 class="mt-2 text-lg font-semibold">Per Hire</h3>
+                        <p class="text-[#334E68] mt-1">Estimated direct cost to replace an employee who leaves, fueling high turnover costs.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="investor-verdict" class="mb-16">
+                 <h2 class="text-3xl font-bold text-center mb-8 text-[#007BFF]">The Investor Verdict: Capital at Risk</h2>
+                 <p class="text-center text-lg text-[#334E68] max-w-3xl mx-auto mb-12">Modern investors use ESG performance as a critical lens to evaluate risk. A poor social and governance track record directly impacts a company's ability to attract and retain capital.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">📉</div>
+                        <h3 class="text-xl font-bold mb-2">ESG Rating Downgrades</h3>
+                        <p class="text-[#334E68]">Agencies like MSCI and S&P penalize companies for social controversies and weak governance, signaling higher risk to the market.</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                         <div class="text-4xl mb-4">💸</div>
+                        <h3 class="text-xl font-bold mb-2">Reduced Access to Capital</h3>
+                        <p class="text-[#334E68]">ESG-focused funds and lenders may avoid or divest from companies with poor human capital management, increasing the cost of capital.</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">📣</div>
+                        <h3 class="text-xl font-bold mb-2">Heightened Shareholder Activism</h3>
+                        <p class="text-[#334E68]">Investors are increasingly filing lawsuits and proposals to force board-level changes and demand accountability for social failures.</p>
+                     </div>
+                 </div>
+            </section>
+
+            <section id="actionable-insights" class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#007BFF]">Actionable Insights: Paving the Way Forward</h2>
+                <p class="text-center text-lg text-[#334E68] max-w-3xl mx-auto mb-8">Leverage AI to generate concrete steps companies can take to proactively address workplace harassment, strengthen their ESG framework, and protect long-term value.</p>
+                <div class="text-center mb-6">
+                    <button id="generateSuggestionsBtn" class="bg-[#007BFF] hover:bg-[#005A9C] text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                        ✨ Generate Policy Improvement Suggestions
+                    </button>
+                </div>
+                <div id="suggestionsOutput" class="mt-8 p-6 bg-[#F0F4F8] rounded-lg border border-gray-200 text-[#1A202C] text-left min-h-[100px] flex items-center justify-center">
+                    <p class="text-gray-500">Click the button above to generate suggestions.</p>
+                </div>
+                <div id="loadingIndicator" class="hidden text-center mt-4 text-[#007BFF] font-semibold">Generating suggestions...</div>
+                <div id="errorDisplay" class="hidden text-center mt-4 text-[#D32F2F] font-semibold">An error occurred. Please try again.</div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+            <p class="text-lg font-bold text-[#005A9C]">Prevention is not a cost—it's an investment.</p>
+            <p class="text-[#334E68] mt-2 max-w-3xl mx-auto">Building a resilient and responsible organization requires a proactive commitment to a safe, respectful, and inclusive culture. This is the foundation of long-term, sustainable value creation.</p>
+             <p class="text-xs text-gray-400 mt-8">Data synthesized from reports by Forbes India, The Economic Times, and academic studies on ESG and financial performance. All figures are for illustrative and analytical purposes.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const brilliantBlues = {
+                primary: '#007BFF',
+                secondary: '#4DA8DA',
+                text: '#1A202C',
+                danger: '#D32F2F',
+                grid: 'rgba(0, 0, 0, 0.1)'
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+
+            function wrapLabels(label, maxLength = 16) {
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+
+            const reportedVsPendingCtx = document.getElementById('reportedVsPendingChart')?.getContext('2d');
+            if (reportedVsPendingCtx) {
+                new Chart(reportedVsPendingCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['FY 2022-23', 'FY 2023-24'],
+                        datasets: [{
+                            label: 'Total Complaints Reported',
+                            data: [1807, 2325],
+                            borderColor: brilliantBlues.primary,
+                            backgroundColor: brilliantBlues.primary,
+                            tension: 0.1,
+                            fill: false
+                        }, {
+                            label: 'Complaints Pending Resolution',
+                            data: [260, 435],
+                            borderColor: brilliantBlues.danger,
+                            backgroundColor: brilliantBlues.danger,
+                            tension: 0.1,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: brilliantBlues.grid },
+                                ticks: { color: brilliantBlues.text }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: brilliantBlues.text }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                labels: { color: brilliantBlues.text }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            const sectoralCasesCtx = document.getElementById('sectoralCasesChart')?.getContext('2d');
+            if(sectoralCasesCtx) {
+                const originalLabels = ['IT', 'Banking', 'Services (Overall)', 'Construction & Metals', 'Manufacturing'];
+                const wrappedLabels = originalLabels.map(label => wrapLabels(label));
+
+                new Chart(sectoralCasesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: wrappedLabels,
+                        datasets: [{
+                            label: 'Relative Concentration of Cases',
+                            data: [85, 80, 90, 60, 50],
+                            backgroundColor: [
+                                brilliantBlues.primary,
+                                brilliantBlues.secondary,
+                                '#005A9C',
+                                '#66D7D1',
+                                '#334E68'
+                            ],
+                            borderColor: 'white',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                         scales: {
+                            x: {
+                                grid: { color: brilliantBlues.grid },
+                                ticks: { color: brilliantBlues.text },
+                                title: { display: true, text: 'Relative Case Index', color: brilliantBlues.text }
+                            },
+                            y: {
+                                grid: { display: false },
+                                ticks: { color: brilliantBlues.text }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    title: tooltipTitleCallback
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const generateSuggestionsBtn = document.getElementById('generateSuggestionsBtn');
+            const suggestionsOutput = document.getElementById('suggestionsOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const errorDisplay = document.getElementById('errorDisplay');
+
+            if (generateSuggestionsBtn) {
+                generateSuggestionsBtn.addEventListener('click', async () => {
+                    suggestionsOutput.innerHTML = '';
+                    suggestionsOutput.classList.remove('justify-center');
+                    loadingIndicator.classList.remove('hidden');
+                    errorDisplay.classList.add('hidden');
+
+                    const prompt = `Given the challenges of workplace harassment in Indian public companies, particularly regarding:
+- A 29% increase in POSH complaints in FY24,
+- 67% increase in pending unresolved cases,
+- 59% of surveyed companies lacking a mandated Internal Complaints Committee (ICC),
+- The significant impact on ESG (Social and Governance pillars),
+- Financial fallout including -17% annualized alpha, 40% productivity decline, ₹50,000+ POSH Act fines, and $4,700 per hire turnover cost,
+- And the resulting investor distrust and reduced access to capital.
+
+Suggest actionable policy improvements and cultural changes companies can implement to effectively address workplace harassment. Focus on prevention, swift and transparent resolution, fostering a safe and inclusive environment, and improving accountability. Provide the suggestions as a bulleted list.`;
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            suggestionsOutput.innerHTML = text.replace(/\n/g, '<br>');
+                        } else {
+                            suggestionsOutput.innerHTML = '<p class="text-gray-500">No suggestions could be generated. Please try again.</p>';
+                            suggestionsOutput.classList.add('justify-center');
+                            errorDisplay.classList.remove('hidden');
+                        }
+                    } catch (error) {
+                        suggestionsOutput.innerHTML = '<p class="text-gray-500">Failed to connect to the suggestion service. Please check your network.</p>';
+                        suggestionsOutput.classList.add('justify-center');
+                        errorDisplay.classList.remove('hidden');
+                    } finally {
+                        loadingIndicator.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
