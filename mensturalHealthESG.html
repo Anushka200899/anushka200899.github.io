@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: The ESG Case for Menstrual Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-step {
+            border-color: #415A77;
+            background-color: #ffffff;
+            color: #0D1B2A;
+        }
+        .flowchart-arrow {
+            color: #415A77;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F2F5]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#0D1B2A] mb-2">The Overlooked ESG Imperative</h1>
+            <p class="text-xl md:text-2xl text-[#415A77]">How Menstrual Health Directly Shapes Sustainable and Equitable Growth</p>
+        </header>
+
+        <section class="text-center mb-16">
+            <div class="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+                <p class="text-2xl text-[#415A77] mb-2">Globally, a staggering</p>
+                <p class="text-8xl font-black text-[#FF6B6B] leading-none">500 Million</p>
+                <p class="text-2xl text-[#415A77] mt-2">individuals face period poverty, lacking access to products, facilities, and education.</p>
+            </div>
+        </section>
+
+        <main class="space-y-16">
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#0D1B2A] border-b-4 border-[#4ECDC4] pb-2 inline-block">
+                    The Social Pillar: Human Capital & Equity
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Cost in the Classroom</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Lack of menstrual health support is a primary driver of school absenteeism, directly hindering educational attainment and future opportunities for girls.</p>
+                        <div class="chart-container mt-auto">
+                            <canvas id="educationImpactChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Productivity Drain</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Poor menstrual health leads to significant economic losses through absenteeism and presenteeism. A Dutch study found an average loss of 8.9 productivity days per year per woman.</p>
+                        <div class="chart-container mt-auto">
+                            <canvas id="productivityLossChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 md:col-span-2 flex flex-col">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Economic Burden of Neglect</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Addressing women's health is not just a social good; it's a massive economic opportunity. The cost of inaction is measured in the tens of billions annually for individual nations.</p>
+                        <div class="chart-container mt-auto" style="max-width: 800px; height: 400px;">
+                            <canvas id="economicImpactChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#0D1B2A] border-b-4 border-[#F7B801] pb-2 inline-block">
+                    The Environmental Pillar: A Planet in Peril
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Disposable Dilemma</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Conventional menstrual products create a colossal waste problem, with plastics that persist in our environment for centuries.</p>
+                        <div class="my-4">
+                            <span class="text-6xl text-[#FF6B6B]">🗑️</span>
+                        </div>
+                        <p class="text-5xl font-black text-[#0D1B2A]">20 Billion</p>
+                        <p class="text-lg text-[#415A77]">products end up in landfills and oceans annually.</p>
+                        <p class="mt-4 text-lg text-[#415A77]">It takes up to <span class="font-bold text-2xl text-[#0D1B2A]">500 years</span> for one pad to decompose.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Sustainable Solution</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Reusable products, like menstrual cups, offer a drastic reduction in environmental impact, aligning with circular economy principles and SDG 12.</p>
+                         <div class="chart-container mt-auto">
+                            <canvas id="environmentalComparisonChart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#0D1B2A] border-b-4 border-[#45B7D1] pb-2 inline-block">
+                    The Governance Pillar: Leadership & Action
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">The Culture of Silence at Work</h3>
+                        <p class="text-[#415A77] mb-4 text-sm">Stigma remains a major barrier. A significant portion of the workforce feels unable to discuss menstrual health openly, hindering access to support and accommodations.</p>
+                        <div class="chart-container mt-auto">
+                            <canvas id="workplaceStigmaChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <h3 class="font-bold text-xl mb-4 text-[#0D1B2A]">Blueprint for a Period-Friendly Workplace</h3>
+                        <p class="text-[#415A77] mb-6 text-sm">Creating an inclusive environment requires a multi-faceted approach, transforming policy into meaningful support.</p>
+                        <div class="space-y-4 flex flex-col items-center">
+                            <div class="flowchart-step border-2 rounded-lg p-3 w-4/5 shadow">Provide Free & Sustainable Products</div>
+                            <div class="flowchart-arrow text-2xl font-bold">↓</div>
+                            <div class="flowchart-step border-2 rounded-lg p-3 w-4/5 shadow">Ensure Clean & Private Facilities</div>
+                            <div class="flowchart-arrow text-2xl font-bold">↓</div>
+                            <div class="flowchart-step border-2 rounded-lg p-3 w-4/5 shadow">Offer Flexible Work Options</div>
+                             <div class="flowchart-arrow text-2xl font-bold">↓</div>
+                            <div class="flowchart-step border-2 rounded-lg p-3 w-4/5 shadow">Educate & Train Managers</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </main>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-300">
+            <p class="text-[#415A77]">Investing in menstrual health is not a cost—it's a strategic investment in human capital, environmental stewardship, and ethical governance. It is a direct pathway to achieving the Sustainable Development Goals and building resilient, long-term value.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const energeticPalette = {
+                red: '#FF6B6B',
+                cyan: '#4ECDC4',
+                blue: '#45B7D1',
+                yellow: '#F7B801',
+                lightYellow: '#FAD336',
+                darkBlue: '#0D1B2A',
+                gray: '#415A77'
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+
+            const defaultChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: energeticPalette.gray
+                        },
+                        grid: {
+                            color: '#e0e1dd'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: energeticPalette.gray
+                        },
+                         grid: {
+                            display: false
+                        }
+                    }
+                }
+            };
+            
+            function wrapLabels(label, maxWidth) {
+                const words = label.split(' ');
+                let lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxWidth) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+
+            new Chart(document.getElementById('educationImpactChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Missed or Left School Early (Japan)', 'Endured Class in Discomfort (Japan)', 'Days Skipped per Month (The Gambia)'],
+                    datasets: [{
+                        label: 'Impact on Education',
+                        data: [18, 32, 5],
+                        backgroundColor: [energeticPalette.red, energeticPalette.yellow, energeticPalette.red],
+                        borderColor: [energeticPalette.red, energeticPalette.yellow, energeticPalette.red],
+                        borderWidth: 1
+                    }]
+                },
+                options: { ...defaultChartOptions,
+                    plugins: {
+                        ...defaultChartOptions.plugins,
+                        tooltip: { ...defaultChartOptions.plugins.tooltip,
+                            callbacks: { ...defaultChartOptions.plugins.tooltip.callbacks,
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.y !== null) {
+                                       label += context.raw + (context.dataIndex === 2 ? ' days' : '%');
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: { ...defaultChartOptions.scales.y,
+                            ticks: { ...defaultChartOptions.scales.y.ticks,
+                                callback: function(value) { return value + (this.getLabelForValue(value).includes('Gambia') ? ' days' : '%') }
+                            }
+                        },
+                        x: { ...defaultChartOptions.scales.x }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('productivityLossChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Productive Days Lost', 'Remaining Work Days'],
+                    datasets: [{
+                        data: [8.9, 251.1],
+                        backgroundColor: [energeticPalette.red, energeticPalette.cyan],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: tooltipTitleCallback
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Lost Productivity Days per Year',
+                            color: energeticPalette.darkBlue,
+                            font: { size: 16 }
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('economicImpactChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Annual cost of poor women\'s health (UK)', wrapLabels('Potential global economic gain by addressing women\'s health', 20), wrapLabels('Potential global gain from addressing PMS', 15)],
+                    datasets: [{
+                        label: 'Economic Impact (in USD Billions)',
+                        data: [25.4, 1000, 115],
+                        backgroundColor: [energeticPalette.red, energeticPalette.cyan, energeticPalette.yellow],
+                    }]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    indexAxis: 'y',
+                     scales: {
+                        x: {
+                            ...defaultChartOptions.scales.x,
+                             ticks: {
+                                color: energeticPalette.gray,
+                                callback: function(value) { return '$' + value + 'B' }
+                            }
+                        },
+                        y: {
+                            ...defaultChartOptions.scales.y,
+                        }
+                    }
+                }
+            });
+            
+            new Chart(document.getElementById('environmentalComparisonChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Decomposition Time (Years)', 'Carbon Footprint Reduction'],
+                    datasets: [
+                        {
+                            label: 'Disposable Products',
+                            data: [500, 0],
+                            backgroundColor: energeticPalette.red,
+                        },
+                        {
+                            label: 'Reusable Menstrual Cup',
+                            data: [0, 99],
+                            backgroundColor: energeticPalette.cyan,
+                        }
+                    ]
+                },
+                 options: {
+                    ...defaultChartOptions,
+                    plugins: { ...defaultChartOptions.plugins,
+                         tooltip: { ...defaultChartOptions.plugins.tooltip,
+                            callbacks: { ...defaultChartOptions.plugins.tooltip.callbacks,
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) { label += ': '; }
+                                    let value = context.raw;
+                                    if (context.dataIndex === 0) {
+                                        label += value + ' years';
+                                    } else {
+                                        label += value + '% lower';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            ...defaultChartOptions.scales.y,
+                            type: 'logarithmic',
+                            ticks: {
+                                callback: function (value, index, values) {
+                                     return Number(value.toString());
+                                }
+                            }
+                        },
+                        x: { ...defaultChartOptions.scales.x }
+                    }
+                }
+            });
+            
+            new Chart(document.getElementById('workplaceStigmaChart'), {
+                type: 'pie',
+                data: {
+                    labels: ['Uncomfortable Discussing at Work', 'Comfortable'],
+                    datasets: [{
+                        label: 'Workplace Discussion Comfort',
+                        data: [49, 51],
+                        backgroundColor: [energeticPalette.yellow, energeticPalette.blue],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: tooltipTitleCallback
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Employee Comfort Discussing Menstrual Health',
+                            color: energeticPalette.darkBlue,
+                            font: { size: 16 }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
